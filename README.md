@@ -1,5 +1,5 @@
 # Attention-Augmented-Convolutional-Networks
-This is a pytorch implementation of the paper [Attention Augmented Convolutional Networks](https://arxiv.org/abs/1904.09925 "Attention Augmented Convolutional Networks") by Irwan Bello, Barret Zoph, Ashish Vaswani, Jonathon Shlens and Quoc V. Le.
+This is a pytorch implementation of the paper [Attention Augmented Convolutional Networks](https://arxiv.org/abs/1904.09925 "Attention Augmented Convolutional Networks")
 
 ## Method
 The paper implements the attention mechanism into different ResNet architectures. Convolutional and attentional feature maps are concatenated in a choosen ratio.
@@ -14,19 +14,24 @@ is the ratio of key depth to number of original output filters
 
 ![AACN](https://user-images.githubusercontent.com/19909320/137499701-4cace468-ffa5-4b2e-b15f-14d2ddee4fbf.png)
 
-## Implementation details
-I only tested the implementation with ResNet50 for now. The used ResNet V1.5 architectures are adapted from https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
+## Disclaimer
 
-The implemented memory efficient version of Relative Self-Attention is adapted with slight changes from the paper. The authors write *The relative positional embeeddings rH and rW are learned and shared across heads but not layers.* I don't think they are actually shared across heads in their implementation and changed that accordingly.
+This design is inspired by the work of [MartinGer](https://github.com/MartinGer). Full credit to him for the foundational ideas.
 
-#### Additional Parameters:
-- attention: ResNet stages in which you would like to apply the attention layers
-- num_heads: Number of attention heads
-- inference: Allows to inspect the attention weights of a trained model
+## Implementation Details
 
-## Example
-See the jupyter notebook or the example training script
+Advanced architectures such as **ResNet-50**, **Wide-ResNet**, and experiments on large-scale datasets like **CIFAR-100** and **ImageNet** are available in:
 
-## Requirements
-- pytorch
-- I use [fast.ai](https://www.fast.ai/) and the [imagenette](https://github.com/fastai/imagenette) dataset for the examples
+- [`AACN_Layer`](#AACN_Layer)  
+- [`AACN_Model`](#AACN_Model)
+
+For a more lightweight and educational example, I implemented an **Attention Augmented ResNet-18** tailored for the **CIFAR-10** dataset. It stays true to the core ideas of the original paper and can be found in:
+
+- [`attention-augmented-cnns.ipynb`](#attention-augmented-cnnsipynb)
+
+For a comparative analysis between **AA-ResNet** and the standard **ResNet**, see:
+
+- [`Standard_ResNet.ipynb`](#standard_resnetipynb)
+
+
+
