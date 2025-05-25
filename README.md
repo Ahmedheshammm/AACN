@@ -20,15 +20,18 @@ This design is inspired by the work of [MartinGer](https://github.com/MartinGer)
 
 # Implementation Details
 
-Advanced architectures such as **ResNet-50**, **Wide-ResNet**, and experiments on large-scale datasets like **CIFAR-100** and **ImageNet** are available in: 
 
-## Fully detailed Architecture
+## - Fully detailed Architecture
+
+Advanced architectures such as **ResNet-50**, **Wide-ResNet**, and experiments on large-scale datasets like **CIFAR-100** and **ImageNet** are available in: 
 
 - [`AACN_Layer`](#AACN_Layer)  
 - [`AACN_Model`](#AACN_Model)
 
+## - Simplified Architecture
+
 For a more lightweight and educational example, I implemented an **Attention Augmented ResNet-18** tailored for the **CIFAR-10** dataset. It stays true to the core ideas of the original paper and can be found in:  
-## Simplified Architecture
+
 
 - [`attention-augmented-cnns.ipynb`](#attention-augmented-cnnsipynb)
 
