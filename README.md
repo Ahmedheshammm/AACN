@@ -27,15 +27,14 @@ This design is inspired by the work of [MartinGer](https://github.com/MartinGer)
 
 This repository is organized to provide both detailed and simplified architectural examples:
 
-* **`Fully detailed Architecture/`**: Contains advanced implementations, including **ResNet-50**, **Wide-ResNet**, and experiments on large-scale datasets like **CIFAR-100** and **ImageNet**. You'll find:
+# * Fully detailed Architecture:
+   Contains advanced implementations, including **ResNet-50**, **Wide-ResNet**, and experiments on large-scale datasets like **CIFAR-100** and **ImageNet**. You'll find:
     * [`AACN_Layer`](Fully%20detailed%20Architecture/AACN_Layer)
     * [`AACN_Model`](Fully%20detailed%20Architecture/AACN_Model)
 
-* **`Simplified Architecture/`**: Offers a more lightweight and educational example. This section features an **Attention Augmented ResNet-18** specifically tailored for the **CIFAR-10** dataset, staying true to the core ideas of the original paper.
+# * Simplified Architecture: 
+   Offers a more lightweight and educational example. This section features an **Attention Augmented ResNet-18** specifically tailored for the **CIFAR-10** dataset, staying true to the core ideas of the original paper.
     * [`attention-augmented-cnns.ipynb`](Simplified%20Architecture/attention-augmented-cnns.ipynb)
-
-* **`Important README/`**: For a comparative analysis between **AA-ResNet** and the standard **ResNet**, see:
-    * [`Standard_ResNet.ipynb`](Important%20README/Standard_ResNet.ipynb)
 
 ---
 
