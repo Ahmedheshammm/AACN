@@ -2,8 +2,8 @@
 
 ---
 
-This repository contains a PyTorch implementation of the paper "[Attention Augmented Convolutional Networks](https://arxiv.org/abs/1904.09925)".
-We implemented a Simplified architecture that followed the core idea of this paper. 
+- This repository contains a PyTorch implementation of the paper "[Attention Augmented Convolutional Networks](https://arxiv.org/abs/1904.09925)".
+- We implemented a Simplified architecture that followed the core idea of this paper. 
 
 ## Overview
 
