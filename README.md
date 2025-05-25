@@ -35,6 +35,7 @@ This repository is organized to provide both detailed and simplified architectur
 ## * Simplified Architecture: 
    Offers a more lightweight and educational example. This section features an **Attention Augmented ResNet-18** specifically tailored for the **CIFAR-10** dataset, staying true to the core ideas of the original paper.
     * [`attention-augmented-cnns.ipynb`](Simplified%20Architecture/attention-augmented-cnns.ipynb)
+    * [`Standard_ResNet.ipynb`](Simplified%20Architecture/Standard_ResNet.ipynb)
 
 ---
 
