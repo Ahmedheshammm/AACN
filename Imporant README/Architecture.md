@@ -6,9 +6,6 @@ This repository compares the performance of a standard ResNet-18 and an Attentio
 
 - `standard-resnet.ipynb`: Implementation and training of standard ResNet-18 on CIFAR-10.
 - `attention-augmented-cnns.ipynb`: Modified ResNet-18 with self-attention modules in selected convolution layers.
-- `resnet18.pth`: Trained weights of the standard ResNet model.
-- `attention_augmented_resnet18.pth`: Trained weights of the attention-augmented ResNet.
-- `report.pdf`: Summary of architecture, training, evaluation, and comparison.
 
 ## 🧠 Model Architecture
 
