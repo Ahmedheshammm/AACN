@@ -3,6 +3,7 @@
 ---
 
 This repository contains a PyTorch implementation of the paper "[Attention Augmented Convolutional Networks](https://arxiv.org/abs/1904.09925)".
+We implemented a Simplified architecture that followed the core idea of this paper. 
 
 ## Overview
 
@@ -32,8 +33,8 @@ This repository is organized to provide both detailed and simplified architectur
     * [`AACN_Layer`](Fully%20detailed%20Architecture/AACN_Layer)
     * [`AACN_Model`](Fully%20detailed%20Architecture/AACN_Model)
 
-* ## Simplified Architecture: 
-   Offers a more lightweight and educational example. This section features an **Attention Augmented ResNet-18** specifically tailored for the **CIFAR-10** dataset, in addition to a comparsion between the model before and after adding self attention, staying true to the core ideas of the original paper.
+* ## Our Simplified Architecture: 
+   Offers a more lightweight and educational example. This section features an **Attention Augmented ResNet-18** specifically tailored for the **CIFAR-10** dataset, in addition to a comparsion between the model before and after adding self attention.
     * [`attention-augmented-cnns.ipynb`](Simplified%20Architecture/attention-augmented-cnns.ipynb)
     * [`Standard_ResNet.ipynb`](Simplified%20Architecture/Standard_ResNet.ipynb)
 
