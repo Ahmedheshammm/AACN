@@ -17,6 +17,9 @@ To further illustrate our findings, we've included visualizations of the trainin
 
 ### Training Progress
 
+<p align="center">
+  <img src="Standard_accuracy.PNG" alt="LumOS Logo" width="200"/>
+</p>
 ![Standard_Training Accuracy Curve](Simplified Architecture/screenshots/Standard_accuracy.PNG)
 ![AA_ResNet_Training_Accuracy Curve](path/to/your/training_curves.png)
 
