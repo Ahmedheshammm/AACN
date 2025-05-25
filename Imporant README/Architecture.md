@@ -1,36 +1,33 @@
-## Architecture
+# Attention Augmented Convolutional Networks on CIFAR-10
 
-The implementation includes:
+This repository compares the performance of a standard ResNet-18 and an Attention Augmented ResNet (AA-ResNet) based on the architecture proposed in [Bello et al., 2019](https://arxiv.org/abs/1904.09925).
 
-- A smaller-scale version of **Attention Augmented ResNet-18**, adapted for the **CIFAR-10** dataset.
-- A baseline **standard ResNet-18** model (without attention) for direct comparison.
-- Attention modules are integrated into the residual blocks following the original paper's design, with scaled-down parameters to fit the CIFAR-10 task.
+## 📁 Files
 
-## Model Variants
+- `standard-resnet.ipynb`: Implementation and training of standard ResNet-18 on CIFAR-10.
+- `attention-augmented-cnns.ipynb`: Modified ResNet-18 with self-attention modules in selected convolution layers.
+- `resnet18.pth`: Trained weights of the standard ResNet model.
+- `attention_augmented_resnet18.pth`: Trained weights of the attention-augmented ResNet.
+- `report.pdf`: Summary of architecture, training, evaluation, and comparison.
 
-- `AA_ResNet18`: ResNet-18 with attention-augmented convolution layers.
-- `Standard_ResNet18`: Standard ResNet-18 without attention.
+## 🧠 Model Architecture
 
-## Files
+- **Standard ResNet-18**: Baseline CNN without attention.
+- **AA-ResNet-18**: Integrates multi-head self-attention into selected convolution layers.
 
-- `attention-augmented-cnns.ipynb`: Main notebook implementing AA-ResNet18.
-- `Standard_ResNet.ipynb`: Notebook implementing standard ResNet18 for comparison.
+## 📊 Dataset
 
-## Design Choices
+- **CIFAR-10**: 60,000 32×32 color images in 10 classes.
+- Train/Test split: 50,000 / 10,000.
 
-- Chosen dataset: **CIFAR-10**
-- Model depth: **ResNet-18**
-- Input image size: `32x32`
-- Attention settings:
-  - Number of heads: `8`
-  - Relative positional encodings: `enabled/disabled`
-  - Attention width ratio (k): `...`
+## 🏋️ Training Details
 
-## Training Details
-
-- Optimizer: `SGD`
 - Learning rate: `0.1`
 - Batch size: `128`
 - Number of epochs: `160-200`
-- Scheduler (if any): `...`
-- Loss function: `CrossEntropyLoss`
+- Loss: CrossEntropyLoss with label smoothing (ε = 0.1)
+- Optimizer: SGD + Momentum
+- Scheduler: MultiStepLR
+- Epochs: 160 (ResNet), 200 (AA-ResNet)
+- Evaluation: Accuracy, Per-Class Accuracy, Visualization
+
