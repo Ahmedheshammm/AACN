@@ -17,7 +17,7 @@ To further illustrate our findings, we've included visualizations of the trainin
 
 ### Training Progress
 
-![Standard_Training Accuracy Curve](/screenshots/AA_accuracy.png)
+![Standard_Training Accuracy Curve](Simplified Architecture/screenshots/Standard_accuracy.PNG)
 ![AA_ResNet_Training_Accuracy Curve](path/to/your/training_curves.png)
 
 ### Per-Class Accuracy
