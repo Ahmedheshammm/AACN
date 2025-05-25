@@ -14,18 +14,5 @@ The AA-ResNet not only achieved a higher final test accuracy but also demonstrat
 ## 🧪 Visualizations
 ---
 To further illustrate our findings, we've included visualizations of the training process and model performance.
+**you can find these metrics @Screenshots**
 
-### Training Progress
-
-<p align="center">
-  <img src="Simplified-Architecture/screenshots/Standard_accuracy.PNG" alt="LumOS Logo" width="200"/>
-</p>
-![Standard_Training Accuracy Curve](Simplified Architecture/screenshots/Standard_accuracy.PNG)
-![AA_ResNet_Training_Accuracy Curve](path/to/your/training_curves.png)
-
-### Per-Class Accuracy
-
-*Showcase your per-class accuracy bar plots to demonstrate the model's performance across different categories.*
-
-![Per-Class Accuracy Bar Plots](path/to/your/per_class_accuracy.png)
-- Simulated Attention Maps (can be extended to real hooks)
